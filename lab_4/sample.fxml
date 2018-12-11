@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/8.0.112" fx:controller="sample.Controller">
+    <children>
+        <TableView fx:id="table" layoutY="52.0" prefHeight="548.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="idC" prefWidth="50.0" text="№"/>
+                <TableColumn fx:id="fromC" prefWidth="150.0" text="Кто звонил"/>
+                <TableColumn fx:id="toC" prefWidth="150.0" text="Кому звонил"/>
+                <TableColumn fx:id="dateC" prefWidth="150.0" text="Дата"/>
+                <TableColumn fx:id="timeC" prefWidth="150.0" text="Время"/>
+                <TableColumn fx:id="durationC" prefWidth="150.0" text="Длительность"/>
+            </columns>
+        </TableView>
+        <TextField onAction="#Search" onMouseClicked="#Input" layoutX="550.0" layoutY="14.0"
+                   prefHeight="27.0" prefWidth="230.0" promptText="Поиск...">
+        </TextField>
+    </children>
+</AnchorPane>
